@@ -1,16 +1,16 @@
 package com.twoseat.i2r;
 
 import lombok.Data;
+import lombok.Generated;
+import org.springframework.data.annotation.Id;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-
+/*
+ * We're using Lombok here just to cut down the amount of boilerplate.
+ */
 @Data
-@Entity
 class Employee {
     @Id
-    @GeneratedValue
+    @Generated
     private Long id;
     private String name;
     private String pensionId;
